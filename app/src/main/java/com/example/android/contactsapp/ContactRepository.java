@@ -22,7 +22,7 @@ public class ContactRepository {
     private ExecutorService executor = Executors.newSingleThreadExecutor();
 
     public ContactRepository(Application application) {
-        ContactDatabase db = ContactDatabase.getInstance(application);
+        ContactDatabase db = ContactDatabase.getDatabase(application);
         contactDao = db.contactDao();
     }
 
