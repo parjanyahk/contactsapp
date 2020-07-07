@@ -1,0 +1,2 @@
+rootProject.name='contactsapp'
+include ':app'
